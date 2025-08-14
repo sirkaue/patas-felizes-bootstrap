@@ -1,6 +1,18 @@
 .hero {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+}
+
+@media (width >= 768px) {
+  .hero {
+    padding: 4rem 0;
+  }
+}
+
+@media (width >= 992px) {
+  .hero {
+    padding: 6rem 0;
+  }
 }
 
 footer {
