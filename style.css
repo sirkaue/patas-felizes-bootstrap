@@ -60,28 +60,8 @@ footer {
   padding: 3rem 1rem;
 }
 
-.footer-content {
-  margin: 0 auto;
-  max-width: 64rem;
-}
-
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-}
-
-.footer-text {
-  h2 {
-    color: white;
-  }
-
-  p {
-    color: #9ca3af;
-    margin: 0;
-  }
-
-  .footer-icons {
-    color: #9ca3af;
-  }
 }
