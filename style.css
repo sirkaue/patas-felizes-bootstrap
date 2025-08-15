@@ -15,6 +15,22 @@
   }
 }
 
+.benefits {
+  padding: 2rem 0;
+}
+
+@media (width >= 768px) {
+  .benefits {
+    padding: 4rem 0;
+  }
+}
+
+@media (width >= 992px) {
+  .benefits {
+    padding: 6rem 0;
+  }
+}
+
 .success-stories {
   padding: 2rem 0;
 }
