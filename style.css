@@ -60,8 +60,11 @@ footer {
   padding: 3rem 1rem;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+footer a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
 }
