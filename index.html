@@ -96,7 +96,7 @@
               >
                 <i data-lucide="heart" class="text-primary fs-4"></i>
               </div>
-              <h5 class="fw-semibold mb-0">Adoção Responsável</h5>
+              <h3 class="fw-semibold mb-0">Adoção Responsável</h3>
               <p class="text-muted mb-0">
                 Todos os pets são avaliados por veterinários e passam por
                 processo de adaptação antes da adoção.
@@ -114,7 +114,7 @@
               >
                 <i data-lucide="hand-heart" class="text-primary fs-4"></i>
               </div>
-              <h5 class="fw-semibold mb-0">Parceria com ONGs</h5>
+              <h3 class="fw-semibold mb-0">Parceria com ONGs</h3>
               <p class="text-muted mb-0">
                 Trabalhamos com as melhores ONGs da região para resgatar e
                 cuidar dos animais.
@@ -132,7 +132,7 @@
               >
                 <i data-lucide="notebook-pen" class="text-primary fs-4"></i>
               </div>
-              <h5 class="fw-semibold mb-0">Processo Simples</h5>
+              <h3 class="fw-semibold mb-0">Processo Simples</h3>
               <p class="text-muted mb-0">
                 Documentação facilitada e acompanhamento pós-adoção para
                 garantir que tudo corra bem.
@@ -150,7 +150,7 @@
               >
                 <i data-lucide="shield-check" class="text-primary fs-4"></i>
               </div>
-              <h5 class="fw-semibold mb-0">Pets Saudáveis</h5>
+              <h3 class="fw-semibold mb-0">Pets Saudáveis</h3>
               <p class="text-muted mb-0">
                 Todos os animais são vacinados, vermifugados e castrados antes
                 da adoção.
@@ -161,11 +161,16 @@
       </div>
     </section>
 
-    <section class="bg-light success-stories">
+    <section
+      class="bg-light success-stories"
+      aria-labelledby="success-stories-title"
+    >
       <div class="container">
         <div class="d-flex flex-column gap-3 text-center mb-5">
-          <h2 class="fs-2 fw-bold mb-0">Histórias de Sucesso</h2>
-          <p class="text-secondary fs-5 mb-0">
+          <h2 id="success-stories-title" class="fs-2 fw-bold mb-0">
+            Histórias de Sucesso
+          </h2>
+          <p class="text-muted fs-5 mb-0">
             Veja alguns dos pets que já encontraram seus lares definitivos
           </p>
         </div>
@@ -173,23 +178,28 @@
         <div class="row g-4 g-lg-4">
           <!-- Card 1 -->
           <div class="col-12 col-lg-4">
-            <div class="card shadow rounded overflow-hidden border-0 h-100">
-              <div class="position-relative">
+            <article
+              class="card shadow rounded overflow-hidden border-0 h-100"
+              aria-labelledby="pet-luna"
+            >
+              <figure class="position-relative">
                 <img
                   src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
-                  alt="Thor com sua nova família"
+                  alt="Luna, uma cadela marrom."
                   class="w-100"
                   style="height: 16rem; object-fit: cover"
                 />
-                <div
+                <figcaption
                   class="position-absolute bottom-0 start-0 end-0 p-3 bg-gradient-overlay"
                 >
-                  <h3 class="text-white fw-medium fs-4 mb-0">Luna</h3>
+                  <h3 id="pet-luna" class="text-white fw-medium fs-4 mb-0">
+                    Luna
+                  </h3>
                   <p class="fs-6 fw-semibold mb-0 text-light-blue">
                     Adotada em Janeiro, 2023
                   </p>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
               <div class="p-4 d-flex flex-column h-100 gap-3">
                 <div class="d-flex flex-column gap-3 flex-grow-1">
                   <div class="d-flex align-items-center gap-3">
@@ -197,50 +207,60 @@
                       class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
                       style="width: 40px; height: 40px"
                     >
-                      <i data-lucide="user-round" class="text-primary"></i>
+                      <i
+                        data-lucide="user-round"
+                        class="text-primary"
+                        aria-hidden="true"
+                      ></i>
                     </div>
                     <div class="d-flex flex-column">
                       <h4 class="fw-medium mb-0">Ana Clara</h4>
                       <p class="fs-6 text-muted mb-0">São Paulo - SP</p>
                     </div>
                   </div>
-                  <span class="text-secondary fst-italic">
+                  <blockquote class="text-secondary fst-italic mb-0">
                     &quot;Adotei a Luna como companhia durante a pandemia e foi
                     a melhor decisão. Ela me ajuda até com minha
                     ansiedade!&quot;
-                  </span>
+                  </blockquote>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                   <i
                     data-lucide="heart"
                     class="text-danger"
                     style="width: 16px; height: 16px"
+                    aria-hidden="true"
                   ></i>
                   <span class="fs-6 text-muted">2 anos na família</span>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
           <!-- Card 2 -->
           <div class="col-12 col-lg-4">
-            <div class="card shadow rounded overflow-hidden border-0 h-100">
-              <div class="position-relative">
+            <article
+              class="card shadow rounded overflow-hidden border-0 h-100"
+              aria-labelledby="pet-bolinha"
+            >
+              <figure class="position-relative">
                 <img
                   src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
                   alt="Thor com sua nova família"
                   class="w-100"
                   style="height: 16rem; object-fit: cover"
                 />
-                <div
+                <figcaption
                   class="position-absolute bottom-0 start-0 end-0 p-3 bg-gradient-overlay"
                 >
-                  <h3 class="text-white fw-medium fs-4 mb-0">Bolinha</h3>
+                  <h3 id="pet-bolinha" class="text-white fw-medium fs-4 mb-0">
+                    Bolinha
+                  </h3>
                   <p class="fs-6 fw-semibold mb-0 text-light-blue">
                     Adotado em Março, 2023
                   </p>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
               <div class="p-4 d-flex flex-column h-100 gap-3">
                 <div class="d-flex flex-column gap-3 flex-grow-1">
                   <div class="d-flex align-items-center gap-3">
@@ -248,50 +268,55 @@
                       class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
                       style="width: 40px; height: 40px"
                     >
-                      <i data-lucide="user-round" class="text-primary"></i>
+                      <i
+                        data-lucide="user-round"
+                        class="text-primary"
+                        aria-hidden="true"
+                      ></i>
                     </div>
                     <div class="d-flex flex-column">
                       <h4 class="fw-medium mb-0">Família Silva</h4>
                       <p class="fs-6 text-muted mb-0">São Paulo - SP</p>
                     </div>
                   </div>
-                  <span class="text-secondary fst-italic">
+                  <blockquote class="text-secondary fst-italic mb-0">
                     &quot;O Bolinha chegou cheio de medo e hoje é o rei da casa.
                     A adaptação foi incrível com o apoio da equipe Patas
                     Felizes!&quot;
-                  </span>
+                  </blockquote>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                   <i
                     data-lucide="heart"
                     class="text-danger"
                     style="width: 16px; height: 16px"
+                    aria-hidden="true"
                   ></i>
                   <span class="fs-6 text-muted">2 anos na família</span>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
           <!-- Card 3 -->
           <div class="col-12 col-lg-4">
-            <div class="card shadow rounded overflow-hidden border-0 h-100">
-              <div class="position-relative">
+            <article class="card shadow rounded overflow-hidden border-0 h-100">
+              <figure class="position-relative">
                 <img
                   src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
                   alt="Thor com sua nova família"
                   class="w-100"
                   style="height: 16rem; object-fit: cover"
                 />
-                <div
+                <figcaption
                   class="position-absolute bottom-0 start-0 end-0 p-3 bg-gradient-overlay"
                 >
                   <h3 class="text-white fw-medium fs-4 mb-0">Batatinha</h3>
                   <p class="fs-6 fw-semibold mb-0 text-light-blue">
                     Adotado em Fevereiro, 2025
                   </p>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
               <div class="p-4 d-flex flex-column h-100 gap-3">
                 <div class="d-flex flex-column gap-3 flex-grow-1">
                   <div class="d-flex align-items-center gap-3">
@@ -299,28 +324,33 @@
                       class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
                       style="width: 40px; height: 40px"
                     >
-                      <i data-lucide="user-round" class="text-primary"></i>
+                      <i
+                        data-lucide="user-round"
+                        class="text-primary"
+                        aria-hidden="true"
+                      ></i>
                     </div>
                     <div class="d-flex flex-column">
                       <h4 class="fw-medium mb-0">Família Oliveira</h4>
                       <p class="fs-6 text-muted mb-0">Belo Horizonte - MG</p>
                     </div>
                   </div>
-                  <span class="text-secondary fst-italic">
+                  <blockquote class="text-secondary fst-italic mb-0">
                     &quot;O Batatinha se tornou o melhor amigo dos nossos
                     filhos. Foi perfeito para nossa família!&quot;
-                  </span>
+                  </blockquote>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                   <i
                     data-lucide="heart"
                     class="text-danger"
                     style="width: 16px; height: 16px"
+                    aria-hidden="true"
                   ></i>
                   <span class="fs-6 text-muted">6 meses na família</span>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
