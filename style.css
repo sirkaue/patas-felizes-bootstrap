@@ -57,7 +57,19 @@
 
 footer {
   background-color: #1f2937;
-  padding: 3rem 1rem;
+  padding: 2rem 0;
+}
+
+@media (width >= 768px) {
+  footer {
+    padding: 4rem 0;
+  }
+}
+
+@media (width >= 992px) {
+  footer {
+    padding: 6rem 0;
+  }
 }
 
 footer a {
