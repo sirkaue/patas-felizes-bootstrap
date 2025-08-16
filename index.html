@@ -23,30 +23,59 @@
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <header>
+    <header class="sticky-top bg-white shadow-sm">
       <div class="container">
         <nav class="d-flex align-items-center justify-content-between py-3">
           <a href="#" class="text-decoration-none">
             <div class="d-flex gap-3">
               <i data-lucide="paw-print"></i>
-              <span>Patas Felizes</span>
+              <span class="fw-medium">Patas Felizes</span>
             </div>
           </a>
 
-          <ul class="d-flex gap-3 list-unstyled mb-0">
-            <li>
-              <a href="#" class="text-decoration-none">Link 1</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none">Link 2</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none">Link 3</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none">Link 4</a>
-            </li>
-          </ul>
+          <div class="d-none d-md-block">
+            <ul class="d-flex gap-3 list-unstyled mb-0">
+              <li>
+                <a href="#" class="text-decoration-none text-primary">Link 1</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-primary">Link 2</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-primary">Link 3</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-primary">Link 4</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dropdown d-md-none">
+            <button
+              class="btn btn-primary d-flex align-items-center gap-2"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              aria-label="Menu de navegação"
+            >
+              <i data-lucide="menu"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li>
+                <a class="dropdown-item" href="#">Link 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Link 2</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Link 4</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
