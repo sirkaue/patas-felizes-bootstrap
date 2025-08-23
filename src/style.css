@@ -1,0 +1,49 @@
+.hero {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+}
+
+.hero,
+.benefits,
+.success-stories,
+footer {
+  padding: 2rem 0;
+}
+
+.bg-gradient-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.text-light-blue {
+  color: #bfdbfe;
+}
+
+footer {
+  background-color: #1f2937;
+
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+@media (width >= 768px) {
+  .hero,
+  .benefits,
+  .success-stories,
+  footer {
+    padding: 4rem 0;
+  }
+}
+
+@media (width >= 992px) {
+  .hero,
+  .benefits,
+  .success-stories,
+  footer {
+    padding: 6rem 0;
+  }
+}
