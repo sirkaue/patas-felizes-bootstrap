@@ -4,12 +4,25 @@ Projeto fictício desenvolvido como atividade acadêmica com o objetivo de prati
 
 O tema escolhido foi uma landing page para o projeto Patas Felizes, uma iniciativa de adoção responsável de pets.
 
+## Sumário
+
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Objetivos do Projeto](#-objetivos-do-projeto)
+- [Pré-requisitos](#pré-requisitos)
+- [Como Executar](#como-executar)
+- [Layout e Funcionalidades](#-layout-e-funcionalidades)
+- [Screenshots](#️-screenshots)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Recursos de Acessibilidade](#-recursos-de-acessibilidade)
+- [Aprendizados](#-aprendizados)
+
 ## 🚀 Tecnologias Utilizadas
 
 - HTML5
 - CSS3
 - Bootstrap 5.3.7
 - Ícones Lucide
+- Vite (bundler)
 
 ## 🎯 Objetivos do Projeto
 
@@ -17,6 +30,72 @@ O tema escolhido foi uma landing page para o projeto Patas Felizes, uma iniciati
 - Aplicar conceitos de design responsivo (mobile-first).
 - Garantir acessibilidade com uso de aria-labels, textos alternativos em imagens (alt) e semântica HTML.
 - Criar uma experiência de navegação fluida, tanto em desktop quanto em dispositivos móveis.
+
+## Pré-requisitos
+
+Escolha uma das opções para executar o projeto:
+
+- [Node.js](https://nodejs.org/en/download) (versão recomendada: 18+)
+- [Docker](https://www.docker.com/)
+
+## Como Executar
+
+Você pode executar o projeto de duas formas:
+
+1. **Com Docker** (recomendado para evitar configurações locais)
+2. **Localmente com Node.js**
+
+### Clone o Projeto
+
+Clone este repositório em sua máquina local:
+
+```bash
+git clone https://github.com/sirkaue/patas-felizes-bootstrap.git
+```
+
+### Executar com Docker
+
+1. Navegue até a pasta raiz do projeto:
+
+   ```bash
+   cd patas-felizes-bootstrap
+   ```
+
+2. Construa a imagem Docker:
+
+   ```bash
+   docker build -t patas-felizes-bootstrap:latest .
+   ```
+
+3. Execute o container:
+
+   ```bash
+   docker run --rm -p 8080:80 --name patas-felizes-bootstrap patas-felizes-bootstrap:latest
+   ```
+
+Após executar os comandos acima, a aplicação estará disponível em [http://localhost:8080](http://localhost:8080).
+
+### Executar Localmente
+
+1. Acesse a pasta do projeto:
+
+   ```bash
+   cd patas-felizes-bootstrap
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Acesse a aplicação em [http://localhost:5173](http://localhost:5173).
 
 ## 📸 Layout e Funcionalidades
 
@@ -42,6 +121,19 @@ O tema escolhido foi uma landing page para o projeto Patas Felizes, uma iniciati
   <img src="images/fullsize-desktop.png" alt="Tela inicial - Desktop" width="500"/>
   <img src="images/mobile-size.png" alt="Tela inicial - Mobile" width="150"/>
 </p>
+
+## 📁 Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+
+```plaintext
+patas-felizes-bootstrap/
+├── public/
+├── src/
+│   ├── main.js
+│   └── style.css
+└── index.html
+```
 
 ## ♿ Recursos de Acessibilidade
 
