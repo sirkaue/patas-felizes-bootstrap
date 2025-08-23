@@ -21,6 +21,7 @@ O tema escolhido foi uma landing page para o projeto Patas Felizes, uma iniciati
 ## 📸 Layout e Funcionalidades
 
 - **Header fixo (sticky) com menu adaptável:**
+
   - Menu horizontal em telas grandes.
   - Dropdown acessível em telas menores.
 
@@ -34,6 +35,13 @@ O tema escolhido foi uma landing page para o projeto Patas Felizes, uma iniciati
   - Sobre o projeto.
   - Links úteis.
   - Contatos fictícios.
+
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="images/fullsize-desktop.png" alt="Tela inicial - Desktop" width="500"/>
+  <img src="images/mobile-size.png" alt="Tela inicial - Mobile" width="150"/>
+</p>
 
 ## ♿ Recursos de Acessibilidade
 
