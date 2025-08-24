@@ -18,9 +18,9 @@ O tema escolhido foi uma landing page para o projeto Patas Felizes, uma iniciati
 
 ## 🚀 Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- Bootstrap 5.3.7
+- HTML
+- SCSS
+- Bootstrap
 - Ícones Lucide
 - Vite (bundler)
 
@@ -35,7 +35,7 @@ O tema escolhido foi uma landing page para o projeto Patas Felizes, uma iniciati
 
 Escolha uma das opções para executar o projeto:
 
-- [Node.js](https://nodejs.org/en/download) (versão recomendada: 18+)
+- [Node.js](https://nodejs.org/en/download) (versão recomendada: 20.19+)
 - [Docker](https://www.docker.com/)
 
 ## Como Executar
@@ -117,10 +117,11 @@ Após executar os comandos acima, a aplicação estará disponível em [http://l
 
 ## 🖼️ Screenshots
 
-<p align="center">
-  <img src="images/fullsize-desktop.png" alt="Tela inicial - Desktop" width="500"/>
-  <img src="images/mobile-size.png" alt="Tela inicial - Mobile" width="150"/>
-</p>
+Abaixo alguns exemplos da interface da aplicação:
+
+![Desktop](images/fullsize-desktop.png)
+![Mobile](images/mobile-size.png)
+![Lighthouse Viewer](images/lighthouse-viewer.png)
 
 ## 📁 Estrutura do Projeto
 
@@ -130,9 +131,15 @@ O projeto está organizado da seguinte forma:
 patas-felizes-bootstrap/
 ├── public/
 ├── src/
-│   ├── main.js
-│   └── style.css
-└── index.html
+│   ├── js/
+│   │   ├── bootstrapInit.js
+│   │   ├── lucideInit.js
+│   │   └── main.js
+│   └── scss/
+│       ├── bootstrap.scss
+│       └── styles.scss
+├── index.html
+└── vite.config.js
 ```
 
 ## ♿ Recursos de Acessibilidade
