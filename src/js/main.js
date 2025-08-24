@@ -1,30 +1,12 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import {
-  createIcons,
-  HandHeart,
-  Heart,
-  Mail,
-  MapPin,
-  Menu,
-  NotebookPen,
-  PawPrint,
-  Phone,
-  ShieldCheck,
-  UserRound,
-} from "lucide";
+import "../scss/styles.scss";
+import { bootstrapInit } from "./bootstrapInit";
+import { lucideInit } from "./lucideInit";
 
-createIcons({
-  icons: {
-    PawPrint,
-    Menu,
-    Heart,
-    HandHeart,
-    NotebookPen,
-    ShieldCheck,
-    UserRound,
-    Mail,
-    Phone,
-    MapPin,
-  },
-});
+function app() {
+  document.addEventListener("DOMContentLoaded", () => {
+    bootstrapInit();
+    lucideInit();
+  });
+}
+
+app();
