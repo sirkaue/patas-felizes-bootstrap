@@ -13,10 +13,13 @@
   <body>
     <header class="sticky-top bg-white shadow-sm">
       <div class="container">
-        <nav class="d-flex align-items-center justify-content-between py-3">
-          <a href="#" class="text-decoration-none">
+        <nav
+          class="d-flex align-items-center justify-content-between py-3"
+          aria-label="Navegação principal"
+        >
+          <a href="#" class="text-decoration-none" aria-label="Página inicial">
             <div class="d-flex gap-3">
-              <i data-lucide="paw-print"></i>
+              <i data-lucide="paw-print" aria-hidden="true"></i>
               <span class="fw-medium">Patas Felizes</span>
             </div>
           </a>
@@ -42,14 +45,14 @@
             <button
               class="btn btn-primary d-flex align-items-center gap-2"
               type="button"
-              id="dropdownMenuButton"
+              id="dropdown-menu-button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
               aria-label="Menu de navegação"
             >
-              <i data-lucide="menu"></i>
+              <i data-lucide="menu" aria-hidden="true"></i>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <ul class="dropdown-menu" aria-labelledby="dropdown-menu-button">
               <li>
                 <a class="dropdown-item" href="#">Link 1</a>
               </li>
@@ -69,13 +72,13 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" aria-labelledby="home-heading">
         <div class="container">
           <div
             class="d-flex flex-column flex-lg-row gap-5 justify-content-between"
           >
             <div class="d-flex flex-column gap-3 justify-content-center w-100">
-              <h1 class="display-4 fw-bold mb-0">
+              <h1 id="home-heading" class="display-4 fw-bold mb-0">
                 Dê um lar cheio de amor para um pet
               </h1>
               <p class="text-secondary fs-5 mb-0">
@@ -107,10 +110,10 @@
         </div>
       </section>
 
-      <section class="benefits">
+      <section class="why-choose" aria-labelledby="why-choose-heading">
         <div class="container">
           <div class="d-flex flex-column gap-3 text-center mb-5">
-            <h2 id="benefits-title" class="fs-2 fw-bold mb-0">
+            <h2 id="why-choose-heading" class="fs-2 fw-bold mb-0">
               Por que adotar com a Patas Felizes?
             </h2>
             <p class="text-muted fs-5 mb-0">
@@ -124,14 +127,21 @@
             <li class="col-12 col-md-6 col-lg-6 col-xl-3">
               <div
                 class="d-flex flex-column align-items-center gap-3 bg-light p-4 text-center h-100 shadow-sm"
+                aria-labelledby="benefit-responsible"
               >
                 <div
                   class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
                   style="width: 64px; height: 64px"
                 >
-                  <i data-lucide="heart" class="text-primary fs-4"></i>
+                  <i
+                    data-lucide="heart"
+                    class="text-primary fs-4"
+                    aria-hidden="true"
+                  ></i>
                 </div>
-                <h3 class="fs-4 fw-medium mb-0">Adoção Responsável</h3>
+                <h3 id="benefit-responsible" class="fs-4 fw-medium mb-0">
+                  Adoção Responsável
+                </h3>
                 <p class="text-muted mb-0">
                   Todos os pets são avaliados por veterinários e passam por
                   processo de adaptação antes da adoção.
@@ -143,14 +153,21 @@
             <li class="col-12 col-md-6 col-lg-6 col-xl-3">
               <div
                 class="d-flex flex-column align-items-center gap-3 bg-light p-4 rounded text-center h-100 shadow-sm"
+                aria-labelledby="benefit-partnership"
               >
                 <div
                   class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
                   style="width: 64px; height: 64px"
                 >
-                  <i data-lucide="hand-heart" class="text-primary fs-4"></i>
+                  <i
+                    data-lucide="hand-heart"
+                    class="text-primary fs-4"
+                    aria-hidden="true"
+                  ></i>
                 </div>
-                <h3 class="fs-4 fw-medium mb-0">Parceria com ONGs</h3>
+                <h3 id="benefit-partnership" class="fs-4 fw-medium mb-0">
+                  Parceria com ONGs
+                </h3>
                 <p class="text-muted mb-0">
                   Trabalhamos com as melhores ONGs da região para resgatar e
                   cuidar dos animais.
@@ -162,14 +179,21 @@
             <li class="col-12 col-md-6 col-lg-6 col-xl-3">
               <div
                 class="d-flex flex-column align-items-center gap-3 bg-light p-4 rounded text-center h-100 shadow-sm"
+                aria-labelledby="benefit-simple"
               >
                 <div
                   class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
                   style="width: 64px; height: 64px"
                 >
-                  <i data-lucide="notebook-pen" class="text-primary fs-4"></i>
+                  <i
+                    data-lucide="notebook-pen"
+                    class="text-primary fs-4"
+                    aria-hidden="true"
+                  ></i>
                 </div>
-                <h3 class="fs-4 fw-medium mb-0">Processo Simples</h3>
+                <h3 id="benefit-simple" class="fs-4 fw-medium mb-0">
+                  Processo Simples
+                </h3>
                 <p class="text-muted mb-0">
                   Documentação facilitada e acompanhamento pós-adoção para
                   garantir que tudo corra bem.
@@ -181,14 +205,21 @@
             <li class="col-12 col-md-6 col-lg-6 col-xl-3">
               <div
                 class="d-flex flex-column align-items-center gap-3 bg-light p-4 rounded text-center h-100 shadow-sm"
+                aria-labelledby="benefit-healthy"
               >
                 <div
                   class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center"
                   style="width: 64px; height: 64px"
                 >
-                  <i data-lucide="shield-check" class="text-primary fs-4"></i>
+                  <i
+                    data-lucide="shield-check"
+                    class="text-primary fs-4"
+                    aria-hidden="true"
+                  ></i>
                 </div>
-                <h3 class="fs-4 fw-medium mb-0">Pets Saudáveis</h3>
+                <h3 id="benefit-healthy" class="fs-4 fw-medium mb-0">
+                  Pets Saudáveis
+                </h3>
                 <p class="text-muted mb-0">
                   Todos os animais são vacinados, vermifugados e castrados antes
                   da adoção.
@@ -200,12 +231,13 @@
       </section>
 
       <section
-        class="bg-light success-stories"
-        aria-labelledby="success-stories-title"
+        id="testimonials"
+        class="bg-light testimonials"
+        aria-labelledby="testimonials-heading"
       >
         <div class="container">
           <div class="d-flex flex-column gap-3 text-center mb-5">
-            <h2 id="success-stories-title" class="fs-2 fw-bold mb-0">
+            <h2 id="testimonials-heading" class="fs-2 fw-bold mb-0">
               Histórias de Sucesso
             </h2>
             <p class="text-muted fs-5 mb-0">
@@ -418,15 +450,15 @@
       </section>
     </main>
 
-    <footer>
+    <footer aria-labelledby="footer-brand">
       <div class="container">
         <div class="row g-4">
-          <!-- Coluna 1 -->
-          <div class="col-12 col-lg-4">
+          <!-- Column 1 -->
+          <div class="col-12 col-lg-4" aria-labelledby="footer-brand">
             <div class="d-flex flex-column gap-3">
               <div class="d-flex align-items-center gap-3 text-light">
-                <i data-lucide="paw-print"></i>
-                <h2 class="mb-0 fs-4">Patas Felizes</h2>
+                <i data-lucide="paw-print" aria-hidden="true"></i>
+                <h2 id="footer-brand" class="mb-0 fs-4">Patas Felizes</h2>
               </div>
               <p class="mb-0 text-white-50">
                 Conectando pets que precisam de amor com pessoas dispostas a dar
@@ -435,10 +467,12 @@
             </div>
           </div>
 
-          <!-- Coluna 2 -->
-          <div class="col-12 col-lg-4">
+          <!-- Column 2 -->
+          <div class="col-12 col-lg-4" aria-labelledby="footer-links">
             <div class="d-flex flex-column gap-3">
-              <h2 class="mb-0 fs-4 text-light">Links Úteis</h2>
+              <h2 id="footer-links" class="mb-0 fs-4 text-light">
+                Links Úteis
+              </h2>
               <ul class="list-unstyled mb-0 d-flex flex-column">
                 <li>
                   <a href="#" class="mb-0 text-decoration-none">Home</a>
@@ -460,10 +494,10 @@
             </div>
           </div>
 
-          <!-- Coluna 3 -->
-          <div class="col-12 col-lg-4">
+          <!-- Column 3 -->
+          <div class="col-12 col-lg-4" aria-labelledby="footer-contact">
             <div class="d-flex flex-column gap-3">
-              <h2 class="mb-0 fs-4 text-light">Contato</h2>
+              <h2 id="footer-contact" class="mb-0 fs-4 text-light">Contato</h2>
               <ul class="list-unstyled mb-0 d-flex flex-column">
                 <li class="d-flex gap-2 align-items-center">
                   <i
