@@ -10,14 +10,18 @@
     />
     <title>Patas Felizes - Adoção de Pets</title>
   </head>
-  <body>
+  <body id="home">
     <header class="sticky-top bg-white shadow-sm">
       <div class="container">
         <nav
           class="d-flex align-items-center justify-content-between py-3"
           aria-label="Navegação principal"
         >
-          <a href="#" class="text-decoration-none" aria-label="Página inicial">
+          <a
+            href="#home"
+            class="text-decoration-none"
+            aria-label="Página inicial"
+          >
             <div class="d-flex gap-3">
               <i data-lucide="paw-print" aria-hidden="true"></i>
               <span class="fw-medium">Patas Felizes</span>
@@ -27,16 +31,24 @@
           <div class="d-none d-md-block">
             <ul class="d-flex gap-3 list-unstyled mb-0">
               <li>
-                <a href="#" class="text-decoration-none text-primary">Link 1</a>
+                <a
+                  href="#home"
+                  class="text-decoration-none text-primary"
+                  aria-current="page"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-primary">Link 2</a>
+                <a href="#why-choose" class="text-decoration-none text-primary"
+                  >Por que escolher?</a
+                >
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-primary">Link 3</a>
-              </li>
-              <li>
-                <a href="#" class="text-decoration-none text-primary">Link 4</a>
+                <a
+                  href="#testimonials"
+                  class="text-decoration-none text-primary"
+                  >Depoimentos</a
+                >
               </li>
             </ul>
           </div>
@@ -54,16 +66,15 @@
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdown-menu-button">
               <li>
-                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#home">Home</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#why-choose"
+                  >Por que escolher?</a
+                >
               </li>
               <li>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Link 4</a>
+                <a class="dropdown-item" href="#testimonials">Depoimentos</a>
               </li>
             </ul>
           </div>
@@ -110,7 +121,11 @@
         </div>
       </section>
 
-      <section class="why-choose" aria-labelledby="why-choose-heading">
+      <section
+        id="why-choose"
+        class="why-choose"
+        aria-labelledby="why-choose-heading"
+      >
         <div class="container">
           <div class="d-flex flex-column gap-3 text-center mb-5">
             <h2 id="why-choose-heading" class="fs-2 fw-bold mb-0">
@@ -475,20 +490,17 @@
               </h2>
               <ul class="list-unstyled mb-0 d-flex flex-column">
                 <li>
-                  <a href="#" class="mb-0 text-decoration-none">Home</a>
+                  <a href="#home" class="mb-0 text-decoration-none">Home</a>
                 </li>
                 <li>
-                  <a href="#" class="mb-0 text-decoration-none"
-                    >Pets para adoção</a
+                  <a href="#why-choose" class="mb-0 text-decoration-none"
+                    >Por que escolher?</a
                   >
                 </li>
                 <li>
-                  <a href="#" class="mb-0 text-decoration-none"
-                    >Como funciona</a
+                  <a href="#testimonials" class="mb-0 text-decoration-none"
+                    >Depoimentos</a
                   >
-                </li>
-                <li>
-                  <a href="#" class="mb-0 text-decoration-none">Depoimentos</a>
                 </li>
               </ul>
             </div>
