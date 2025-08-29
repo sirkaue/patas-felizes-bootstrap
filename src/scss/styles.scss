@@ -5,8 +5,8 @@
 }
 
 .hero,
-.benefits,
-.success-stories,
+.why-choose,
+.testimonials,
 footer {
   padding: 2rem 0;
 }
@@ -34,8 +34,8 @@ footer {
 
 @media (width >= 768px) {
   .hero,
-  .benefits,
-  .success-stories,
+  .why-choose,
+  .testimonials,
   footer {
     padding: 4rem 0;
   }
@@ -43,8 +43,8 @@ footer {
 
 @media (width >= 992px) {
   .hero,
-  .benefits,
-  .success-stories,
+  .why-choose,
+  .testimonials,
   footer {
     padding: 6rem 0;
   }
