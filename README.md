@@ -132,13 +132,14 @@ patas-felizes-bootstrap/
 ├── public/
 ├── src/
 │   ├── js/
-│   │   ├── bootstrapInit.js
-│   │   ├── lucideInit.js
-│   │   └── main.js
-│   └── scss/
-│       ├── bootstrap.scss
-│       └── styles.scss
-├── index.html
+│   │   ├── initBootstrap.js
+│   │   ├── initLucide.js
+│   │   ├── main.js
+│   │   └── initTestimonials.js
+│   ├── scss/
+│   │   ├── bootstrap.scss
+│   │   └── styles.scss
+│   └── index.html
 └── vite.config.js
 ```
 
