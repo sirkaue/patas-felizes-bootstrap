@@ -148,6 +148,6 @@ function updatePetInformation() {
   testimonialsCards.forEach(processTestimonialCard);
 }
 
-export function testimonialsInit() {
+export function initTestimonials() {
   updatePetInformation();
 }

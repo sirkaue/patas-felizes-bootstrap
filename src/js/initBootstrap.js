@@ -4,9 +4,9 @@ function initDropdowns() {
   const dropdownElements = document.querySelectorAll(
     '[data-bs-toggle="dropdown"]'
   );
-  dropdownElements.forEach((elements) => new Dropdown(elements));
+  dropdownElements.forEach((element) => new Dropdown(element));
 }
 
-export function bootstrapInit() {
+export function initBootstrap() {
   initDropdowns();
 }

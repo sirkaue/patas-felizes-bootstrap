@@ -12,7 +12,7 @@ import {
   UserRound,
 } from "lucide";
 
-export function lucideInit() {
+export function initLucide() {
   createIcons({
     icons: {
       PawPrint,
