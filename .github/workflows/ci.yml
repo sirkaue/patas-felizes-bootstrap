@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ["20.x", "22.x"]
+        node-version: [20.x, 22.x]
 
     steps:
       - name: "Checkout repository 🛎️"
@@ -33,6 +33,9 @@ jobs:
 
       - name: "Run lint check 🧐"
         run: npm run lint
+
+      - name: "Run Prettier format check 💅"
+        run: npm run format:check
 
       - name: "Run build check 🔨"
         run: npm run build
