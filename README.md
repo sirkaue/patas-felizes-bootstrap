@@ -100,7 +100,6 @@ Após executar os comandos acima, a aplicação estará disponível em [http://l
 ## 📸 Layout e Funcionalidades
 
 - **Header fixo (sticky) com menu adaptável:**
-
   - Menu horizontal em telas grandes.
   - Dropdown acessível em telas menores.
 
