@@ -31,5 +31,8 @@ jobs:
       - name: "Install dependencies 📦"
         run: npm ci
 
+      - name: "Run lint check 🧐"
+        run: npm run lint
+
       - name: "Run build check 🔨"
         run: npm run build
