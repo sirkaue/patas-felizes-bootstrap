@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^9.37.0",
@@ -17,6 +18,8 @@
     "eslint": "^9.37.0",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
     "prettier": "^3.6.2",
     "sass": "^1.90.0",
     "vite": "^7.1.2"
@@ -25,5 +28,15 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.7",
     "lucide": "^0.541.0"
-  }
+  },
+  "lint-staged": {
+    "*.{js,mjs,cjs,html}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
 }
