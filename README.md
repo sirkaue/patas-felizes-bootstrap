@@ -38,6 +38,9 @@ Escolha uma das opções para executar o projeto:
 - [Node.js](https://nodejs.org/en/download) (versão recomendada: 20.19+)
 - [Docker](https://www.docker.com/)
 
+> [!NOTE]  
+> Para a execução local, este projeto utiliza o pnpm como gerenciador de pacotes.
+
 ## Como Executar
 
 Você pode executar o projeto de duas formas:
@@ -83,19 +86,25 @@ Após executar os comandos acima, a aplicação estará disponível em [http://l
    cd patas-felizes-bootstrap
    ```
 
-2. Instale as dependências:
+2. **Ative o pnpm** (se for a primeira vez): O `pnpm` já vem incluído no Node.js (a partir da v16) via Corepack. Para ativá-lo, execute:
 
    ```bash
-   npm install
+   corepack enable
    ```
 
-3. Inicie o servidor de desenvolvimento:
+3. Instale as dependências:
 
    ```bash
-   npm run dev
+   pnpm install
    ```
 
-4. Acesse a aplicação em [http://localhost:5173](http://localhost:5173).
+4. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   pnpm run dev
+   ```
+
+5. Acesse a aplicação em [http://localhost:5173](http://localhost:5173).
 
 ## 📸 Layout e Funcionalidades
 
