@@ -42,3 +42,15 @@ jobs:
 
       - name: "Run build check 🔨"
         run: pnpm run build
+
+  docker-build-check:
+    name: "Docker Build Check 🐳"
+    runs-on: ubuntu-latest
+    needs: build-check
+
+    steps:
+      - name: "Checkout repository 🛎️"
+        uses: actions/checkout@v4
+
+      - name: "Run Docker build test 🔨"
+        run: docker build -t patas-felizes-ci-test .
