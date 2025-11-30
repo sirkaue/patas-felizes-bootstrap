@@ -145,7 +145,10 @@ function processAdoptionDateElement(adoptionDateElement, petData) {
 
 function updatePetInformation() {
   const testimonialsCards = document.querySelectorAll("#testimonials .card");
-  testimonialsCards.forEach(processTestimonialCard);
+
+  for (const card of testimonialsCards) {
+    processTestimonialCard(card);
+  }
 }
 
 export function initTestimonials() {
