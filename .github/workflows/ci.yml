@@ -1,4 +1,4 @@
-name: "CI: Build Check"
+name: "CI: Build Check & Sonar"
 
 on:
   pull_request:
@@ -26,7 +26,7 @@ jobs:
         uses: pnpm/action-setup@v4
 
       - name: "Setup Node.js ${{ matrix.node-version }} ⚙️"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
@@ -42,6 +42,40 @@ jobs:
 
       - name: "Run build check 🔨"
         run: pnpm run build
+
+  sonar-analysis:
+    name: "SonarQube Cloud Analysis 📡"
+    runs-on: ubuntu-latest
+    needs: build-check
+    steps:
+      - name: "Checkout repository 🛎️"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+
+      - name: "Setup pnpm 📦"
+        uses: pnpm/action-setup@v4
+
+      - name: "Setup Node.js 24 ⚙️"
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: "pnpm"
+
+      - name: "Install dependencies 🧊"
+        run: pnpm install --frozen-lockfile
+
+      - name: "Run SonarScanner via pnpm dlx 🔍"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          pnpm --package=@sonar/scan dlx sonar \
+            -Dsonar.organization=ALTERAR_AQUI_NOME_DA_ORGANIZACAO \
+            -Dsonar.projectKey=ALTERAR_AQUI_CHAVE_DO_PROJETO \
+            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.sources=. \
+            -Dsonar.exclusions=**/node_modules/**,**/dist/**,**/coverage/**
 
   docker-build-check:
     name: "Docker Build Check 🐳"
