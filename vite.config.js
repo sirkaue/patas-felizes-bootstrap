@@ -1,5 +1,5 @@
-import { dirname, resolve } from "path";
-import { fileURLToPath } from "url";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -14,12 +14,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        silenceDeprecations: [
-          "import",
-          "mixed-decls",
-          "color-functions",
-          "global-builtin",
-        ],
+        silenceDeprecations: ["import", "color-functions", "global-builtin"],
       },
     },
   },
